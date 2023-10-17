@@ -1,0 +1,41 @@
+name: jupyter
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - altair
+  - beautifulsoup4
+  - bokeh
+  - bottleneck
+  - cloudpickle
+  - cython
+  - cytoolz
+  - dask
+  - dill
+  - h5py
+  - ipykernel
+  - ipympl
+  - ipywidgets
+  - jupyterlab-git
+  - jupyterlab-lsp
+  - python-lsp-server
+  - matplotlib-base
+  - numba
+  - numexpr
+  - openai
+  - openpyxl
+  - pandas
+  - patsy
+  - protobuf
+  - pytables
+  - requests
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - seaborn
+  - sqlalchemy
+  - statsmodels
+  - sympy
+  - widgetsnbextension
+  - xlrd

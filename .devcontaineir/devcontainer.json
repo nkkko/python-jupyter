@@ -1,0 +1,74 @@
+{
+	"name": "Python Jupyter",
+	"build": {
+		"dockerfile": "Dockerfile"
+	  },
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "lts",
+			"nvmVersion": "latest"
+		},
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/black:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/flake8:2": {
+			"version": "latest",
+			"plugins": "flake8-black flake8-isort flake8-print flake8-bandit flake8-pylint flake8-builtins flake8-spellcheck flake8-pytest-style flake8-django flake8-fastapi"
+		},
+		"ghcr.io/devcontainers-contrib/features/git-lfs:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/isort:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/micro:1": {},
+		"ghcr.io/devcontainers-contrib/features/mypy:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/ruff:1": {
+			"version": "latest"
+		},
+		"ghcr.io/warrenbuckley/codespace-features/sqlite:1": {},
+		"ghcr.io/devcontainers-community/npm-features/prettier:1": {
+			"version": "latest"
+		}
+	},
+	"customizations": {
+		  "vscode": {
+			"extensions": [
+			  "ms-toolsai.jupyter",
+			  "ms-python.python",
+			  "github.remotehub",
+			  "charliermarsh.ruff",
+			  "ms-toolsai.jupyter-keymap",
+			  "ban.spellright",
+			  "formulahendry.auto-complete-tag",
+			  "njpwerner.autodocstring",
+			  "ms-python.black-formatter",
+			  "ms-azuretools.vscode-docker",
+			  "github.copilot",
+			  "github.copilot-chat",
+			  "github.copilot-labs",
+			  "ms-toolsai.vscode-jupyter-powertoys",
+			  "ms-python.gather",
+			  "matangover.mypy",
+			  "ionutvmi.path-autocomplete",
+			  "christian-kohler.path-intellisense",
+			  "donjayamanne.python-extension-pack",
+			  "reditorsupport.r",
+			  "njqdev.vscode-python-typehint",
+			  "davidanson.vscode-markdownlint",
+			  "yzhang.markdown-all-in-one",
+			  "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+			]
+		  }
+	}
+}
